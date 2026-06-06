@@ -5,7 +5,7 @@ Description: "Declaration of this patient summary being crafted by hand by the p
 * meta
   * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATRPT "patient reported"
   * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATAST "patient asserted"
-  * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#AIAST "Artificial Intelligence asserted"
+//  * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#AIAST "Artificial Intelligence asserted"
 * text
   * status = #additional
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">I have crafted this summary myself by hand, utilizing data from various sources.</div>"
@@ -49,7 +49,7 @@ Description: "Declaration of the use of AI in the creation of this patient summa
 * meta
   * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATRPT "patient reported"
   * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATAST "patient asserted"
-  * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#AIAST "Artificial Intelligence asserted"
+//  * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#AIAST "Artificial Intelligence asserted"
 * text
   * status = #additional
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">I used Microsoft Copilot to add LOINC codes to lab results, based on the Finnish domestic Kuntaliitto codes that were present in my records. I verified the accuracy of the added codes and fixed any errors I was able to spot.</div>"

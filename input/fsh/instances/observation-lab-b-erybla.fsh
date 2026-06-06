@@ -15,9 +15,6 @@ Description: "Observation B -EryBla (erytroblastit) 2023-12-18T12:15:00+02:00"
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * code
   * coding[+] = http://loinc.org#715-3 "Normoblasts [#/volume] in Blood"
-  // Not found in KUntaliitto code set on Koodistopalvelu
-  // FinGen maps this to OMOP code 3021589
-  * coding[+] = https://fimlab.fi/#B%20-EryBla "B -EryBla"
   * text = "B -EryBla (erytroblastit)"
 * subject
   * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
@@ -52,9 +49,6 @@ Description: "Observation B -EryBla (erytroblastit) 2024-03-22T10:35:00+02:00"
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * code
   * coding[+] = http://loinc.org#715-3 "Normoblasts [#/volume] in Blood"
-  // Not found in KUntaliitto code set on Koodistopalvelu
-  // FinGen maps this to OMOP code 3021589
-  * coding[+] = https://fimlab.fi/#B%20-EryBla "B -EryBla"
   * text = "B -EryBla (erytroblastit)"
 * subject
   * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
@@ -89,9 +83,6 @@ Description: "Observation B -EryBla (erytroblastit) 2024-12-13T08:00:00+02:00"
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * code
   * coding[+] = http://loinc.org#715-3 "Normoblasts [#/volume] in Blood"
-  // Not found in KUntaliitto code set on Koodistopalvelu
-  // FinGen maps this to OMOP code 3021589
-  * coding[+] = https://fimlab.fi/#B%20-EryBla "B -EryBla"
   * text = "B -EryBla (erytroblastit)"
 * subject
   * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
@@ -126,9 +117,6 @@ Description: "Observation B -EryBla (erytroblastit) 2026-05-22T14:40:00+02:00"
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * code
   * coding[+] = http://loinc.org#715-3 "Normoblasts [#/volume] in Blood"
-  // Not found in KUntaliitto code set on Koodistopalvelu
-  // FinGen maps this to OMOP code 3021589
-  * coding[+] = https://fimlab.fi/#B%20-EryBla "B -EryBla"
   * text = "B -EryBla (erytroblastit)"
 * subject
   * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"

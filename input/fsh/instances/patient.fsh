@@ -7,7 +7,6 @@ Description: "A test patient"
   * profile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
   * profile[+] = "http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|2.0.0"
   * profile[+] = "http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps"
-  * profile[+] = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient|2.0.0"
   * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATRPT "patient reported"
 * text
   * status = #generated

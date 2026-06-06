@@ -1,51 +1,3 @@
-Instance: Deny-data-use-for-marketing
-InstanceOf: Consent
-Description: "Deny the use of my data for marketing"
-* id = "fc6ca80d-ce07-47d9-a1c0-49e955ae166b"
-* meta
-  * profile[+] = "http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps"
-  * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATRPT "patient reported"
-* text
-  * status = #additional
-  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>I don't want my data to be used for marketing purposes.</p></div>"
-* status = #active
-* scope
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentscope#adr "Advanced Care Directive"
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
-  * text = "Patient Privacy Consent"
-* category[+]
-  * coding[+] = http://loinc.org#64292-6 "Release of information consent Document"
-  * text = "Release of information consent Document"
-* category[+]
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentcategorycodes#acd "Advance Directive"
-  * text = "Advance Directive"
-* category[+]
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentcategorycodes#rsdid "De-identified Information Access"
-  * text = "De-identified information"
-* category[+]
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentcategorycodes#rsreid "Re-identifiable Information Access"
-  * text = "Re-identifiable information"
-* patient
-  * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
-  * display = "Example Patient"
-* dateTime = "2026-02-13T17:59:00+02:00"
-* performer
-  * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
-  * display = "Example Patient"
-* policy.uri = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
-// * policyRule
-//   * coding[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDPRCD "GDPR Consent Directive"
-//   * text = "GDPR consent"
-* provision
-  * type = #deny
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HMARKT "healthcare marketing"
-  * data
-    * meaning = #related
-    * reference
-      * type = "Bundle"
-      * identifier.value = "ips-for-mikko"
-      * display = "This patient summary"
-
 Instance: Deny-data-use-for-ml-training
 InstanceOf: Consent
 Description: "Deny the use of *re-identifiable* data for machine learning training"
@@ -81,68 +33,13 @@ Description: "Deny the use of *re-identifiable* data for machine learning traini
 * provision
   * type = #deny
 //  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
+  * purpose[+].display = "machine learning training"
 /*
   * data
     * meaning = #related
     * reference.reference = "urn:uuid:da879ae4-8249-4852-ad80-ccced057540c"
 */
 
-Instance: Consent-data-use-healthcare
-InstanceOf: Consent
-Description: "Consent for the use of my data in healthcare"
-* id = "0b8b4bfe-12e8-4dcc-9299-27fd76e464ce"
-* meta
-  * profile[+] = "http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps"
-  * security[+] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#PATRPT "patient reported"
-* text
-  * status = #additional
-  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>I want my data to be used for my treatment. Please use it! I'm fine with AI and decision support systems having access to my data for this purpose</p></div>"
-* status = #active
-* scope
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentscope#adr "Advanced Care Directive"
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
-  * text = "Patient Privacy"
-* category[+]
-  * coding[+] = http://loinc.org#64292-6 "Release of information consent Document"
-  * text = "Release of information consent Document"
-* category[+]
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentcategorycodes#acd "Advance Directive"
-  * text = "Advance Directive"
-* category[+]
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentcategorycodes#rsdid "De-identified Information Access"
-  * text = "De-identified information"
-* category[+]
-  * coding[+] = http://terminology.hl7.org/CodeSystem/consentcategorycodes#rsreid "Re-identifiable Information Access"
-  * text = "Re-identifiable information"
-* patient
-  * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
-  * display = "Example Patient"
-* dateTime = "2026-02-13T17:59:00+02:00"
-* performer
-  * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
-  * display = "Example Patient"
-* policy.uri = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
-* provision
-  * type = #permit
-  * action[+] = http://terminology.hl7.org/CodeSystem/consentaction#collect
-  * action[+] = http://terminology.hl7.org/CodeSystem/consentaction#access
-  * action[+] = http://terminology.hl7.org/CodeSystem/consentaction#use
-  * action[+] = http://terminology.hl7.org/CodeSystem/consentaction#disclose
-  * action[+] = http://terminology.hl7.org/CodeSystem/consentaction#correct
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#TREAT "treatment"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#COC "coordination of care"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#ETREAT "Emergency Treatment"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#BTG "break the glass"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#ERTREAT "emergency room treatment"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HOPERAT "healthcare operations"
-//  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#TREATDS "decision support assisted treatment decision"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST "test health data"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#PATRQT "patient requested"
-/*
-  * data
-    * meaning = #related
-    * reference.reference = "urn:uuid:da879ae4-8249-4852-ad80-ccced057540c"
-*/
 
 Instance: Consent-data-use-research
 InstanceOf: Consent
@@ -179,7 +76,11 @@ Description: "Consent for the use of *de-identified information* for research"
 * performer
   * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
   * display = "Example Patient"
-* policy.uri = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+// * policy.uri = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+* policyRule
+//  * coding[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDPRCD "GDPR Consent Directive"
+  * coding[+].display = "GDPR Consent Directive"
+  * text = "GDPR consent"
 * provision
   * type = #permit
   * action[+] = http://terminology.hl7.org/CodeSystem/consentaction#collect
@@ -190,7 +91,7 @@ Description: "Consent for the use of *de-identified information* for research"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HOPERAT "healthcare operations"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST "test health data"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#TRAIN "training"
-  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
+//  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HRESCH "healthcare research"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#PUBHLTH "public health"
 

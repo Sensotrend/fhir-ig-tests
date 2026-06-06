@@ -17,7 +17,6 @@ dependencies:
   hl7.fhir.uv.ipa: latest
   hl7.fhir.uv.ips: latest
   hl7.fhir.eu.base: latest
-  hl7.fhir.fi.base: latest
   hl7.fhir.eu.eps: current
   hl7.fhir.uv.security-label-ds4p: latest
 
