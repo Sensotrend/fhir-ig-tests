@@ -1,0 +1,32 @@
+id: com.sensotrend.fhir-ig-tests
+canonical: https://sensotrend.com/fhir/fhir-ig-tests
+name: FHIR IG Tests
+title: FHIR Implementation Guide Tests
+description: This mock FHIR implementation guide helps isolate tests and problem reports for any issues around FHIR IG development
+status: active # draft | active | retired | unknown
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+publisher:
+  name: Sensotrend Oy
+  email: info@sensotrend.com
+  url: https://sensotrend.com/
+
+dependencies:
+  hl7.fhir.uv.ipa: latest
+  hl7.fhir.uv.ips: latest
+  hl7.fhir.eu.base: latest
+  hl7.fhir.fi.base: latest
+  hl7.fhir.eu.eps: current
+  hl7.fhir.uv.security-label-ds4p: latest
+
+parameters:
+  pin-canonicals: pin-all
+
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
+
+instanceOptions:
+  manualSliceOrdering: true
