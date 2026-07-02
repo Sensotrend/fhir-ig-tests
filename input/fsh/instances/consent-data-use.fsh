@@ -91,7 +91,7 @@ Description: "Consent for the use of *de-identified information* for research"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HOPERAT "healthcare operations"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST "test health data"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#TRAIN "training"
-//  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
+  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HRESCH "healthcare research"
   * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#PUBHLTH "public health"
 
