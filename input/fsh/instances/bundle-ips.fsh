@@ -28,17 +28,17 @@ Description: "International Patient Summary  as a FHIR Bundle"
   * fullUrl =  "urn:uuid:e7fd44af-ae28-4994-a04f-37d8e52864a1"
   * resource = Consent-data-use-research
 * entry[observation-results-laboratory-pathology][+]
-  * fullUrl = "urn:uuid:019e967a-597d-7f68-9eb5-1c43b6a3bb79"
+  * fullUrl = "urn:uuid:019e97db-78d6-7afd-b3e2-10bfcbea2b05"
   * resource = Observation-lab-b-erybla-1
 * entry[observation-results-laboratory-pathology][+]
-  * fullUrl = "urn:uuid:019e967a-597d-7b69-8ec0-9e222fc5905f"
+  * fullUrl = "urn:uuid:019e97db-78d6-7259-a462-eec26c49e168"
   * resource = Observation-lab-b-erybla-2
 * entry[observation-results-laboratory-pathology][+]
-  * fullUrl = "urn:uuid:019e967a-597d-70cb-800a-47a80be16379"
-  * resource = Observation-lab-b-erybla-3
+  * fullUrl = "urn:uuid:019e97db-78d6-7201-b8ba-4564669ceec2"
+  * resource = Observation-lab-u-alb-1
 * entry[observation-results-laboratory-pathology][+]
-  * fullUrl = "urn:uuid:019e967a-597d-7ffc-9c87-e025943929ca"
-  * resource = Observation-lab-b-erybla-4
+  * fullUrl = "urn:uuid:019e97db-78d6-71b7-a0ee-14ef301d3f6b"
+  * resource = Observation-lab-u-alb-2
 * entry[+]
   * fullUrl = "urn:uuid:1f5bd080-2962-4a52-ae9f-d2209abef49b"
   * resource = Provenance-ips-creation

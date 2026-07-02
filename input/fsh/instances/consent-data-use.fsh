@@ -29,11 +29,12 @@ Description: "Deny the use of *re-identifiable* data for machine learning traini
 * performer
   * reference = "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
   * display = "Example Patient"
-* policy.uri = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+* policyRule
+  * coding[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDPRCD "GDPR Consent Directive"
+  * text = "GDPR consent"
 * provision
   * type = #deny
-//  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
-  * purpose[+].display = "machine learning training"
+  * purpose[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#MLTRAINING "machine learning training"
 /*
   * data
     * meaning = #related
@@ -78,8 +79,7 @@ Description: "Consent for the use of *de-identified information* for research"
   * display = "Example Patient"
 // * policy.uri = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
 * policyRule
-//  * coding[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDPRCD "GDPR Consent Directive"
-  * coding[+].display = "GDPR Consent Directive"
+  * coding[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDPRCD "GDPR Consent Directive"
   * text = "GDPR consent"
 * provision
   * type = #permit

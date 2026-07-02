@@ -63,17 +63,17 @@ Description: "International Patient Summary "
   * mode = #working
   * orderedBy = http://terminology.hl7.org/CodeSystem/list-order#event-date "Sorted by Event Date"
   * entry[results-observation-laboratory-pathology][+]
-    * reference = "urn:uuid:019e967a-597d-7f68-9eb5-1c43b6a3bb79"
+    * reference = "urn:uuid:019e97db-78d6-7201-b8ba-4564669ceec2"
+    * display = "Observation U -Alb (albumiini) 2023-12-18T06:00:00+02:00"
+  * entry[results-observation-laboratory-pathology][+]
+    * reference = "urn:uuid:019e97db-78d6-7afd-b3e2-10bfcbea2b05"
     * display = "Observation B -EryBla (erytroblastit) 2023-12-18T12:15:00+02:00"
   * entry[results-observation-laboratory-pathology][+]
-    * reference = "urn:uuid:019e967a-597d-7b69-8ec0-9e222fc5905f"
+    * reference = "urn:uuid:019e97db-78d6-7259-a462-eec26c49e168"
     * display = "Observation B -EryBla (erytroblastit) 2024-03-22T10:35:00+02:00"
   * entry[results-observation-laboratory-pathology][+]
-    * reference = "urn:uuid:019e967a-597d-70cb-800a-47a80be16379"
-    * display = "Observation B -EryBla (erytroblastit) 2024-12-13T08:00:00+02:00"
-  * entry[results-observation-laboratory-pathology][+]
-    * reference = "urn:uuid:019e967a-597d-7ffc-9c87-e025943929ca"
-    * display = "Observation B -EryBla (erytroblastit) 2026-05-22T14:40:00+02:00"
+    * reference = "urn:uuid:019e97db-78d6-71b7-a0ee-14ef301d3f6b"
+    * display = "Observation U -Alb (albumiini) 2024-12-17T12:25:00+02:00"
 * section[sectionProceduresHx]
   * title = "History of Procedures"
   * code.coding[0] = http://loinc.org#47519-4 "History of Procedures Document"
