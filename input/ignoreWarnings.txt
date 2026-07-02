@@ -1,0 +1,11 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# This patient summary has not been attested by a legal or a professional entity
+This element does not match any known slice defined in the profile http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps|1.0.0-ci-build (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# This is a Finnish oid based code system for which a FHIR representation does not yet exist.
+A definition for CodeSystem 'urn:oid:1.2.246.537.6.3' could not be found, so the code cannot be validated
